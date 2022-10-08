@@ -1,26 +1,28 @@
+/* Custom Properties */
 :root {
-    --clr-primary-100: hsl(171, 66%, 44%);
-    --clr-primary-200: hsl(233, 100%, 69%);
-  
-    --clr-neutral-100: hsl(210, 10%, 33%);
-    --clr-neutral-200: hsl(201, 11%, 66%);
-    --clr-neutral-300: hsl(0, 0%, 100%);
-  
-    --clr-opacity-100: hsla(171, 66%, 44%, 0.5);
-    --clr-opacity-200: hsla(233, 100%, 69%, 0.5);
-  
-    --ff-primary: 'Bai Jamjuree', sans-serif;
-  
-    --fs-400: 1rem;
-    --fs-500: 1.125rem;
-    --fs-600: 1.5rem;
-    --fs-700: 1.75rem;
-    --fs-800: 2rem;
-  
-    --fw-regular: 400;
-    --fw-bold: 600;
-  }
+  --clr-primary-100: hsl(171, 66%, 44%);
+  --clr-primary-200: hsl(233, 100%, 69%);
 
+  --clr-neutral-100: hsl(210, 10%, 33%);
+  --clr-neutral-200: hsl(201, 11%, 66%);
+  --clr-neutral-300: hsl(0, 0%, 100%);
+
+  --clr-opacity-100: hsla(171, 66%, 44%, 0.5);
+  --clr-opacity-200: hsla(233, 100%, 69%, 0.5);
+
+  --ff-primary: "Bai Jamjuree", sans-serif;
+
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+/* Mobile */
 * {
   margin: 0;
   padding: 0;
@@ -29,60 +31,77 @@
 }
 
 h1 {
-    font-size: var(--fs-800);
-    color: var(--clr-neutral-100);
+  font-size: var(--fs-800);
+  color: var(--clr-neutral-100);
 }
 
 h2 {
-    font-size: var(--fs-600);
-    color: var(--clr-neutral-100);
+  font-size: var(--fs-600);
+  color: var(--clr-neutral-100);
 }
 
 h3 {
-    font-size: var(--fs-700);
-    color: var(--clr-neutral-100);
+  font-size: var(--fs-700);
+  color: var(--clr-neutral-100);
 }
 
 p {
-    font-size: var(--fs-400);
-    color: var(--clr-neutral-200);
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-200);
 }
 
 button {
-    font-size: var(--fs-500);
-    color: var(--clr-neutral-300);
+  font-size: var(--fs-500);
+  color: var(--clr-neutral-300);
 }
 
 button.hero__content--button-1:hover {
-    color: var(--clr-opacity-100);
+  color: var(--clr-opacity-100);
 }
 
 button.hero__content--button-2:hover {
-    color: var(--clr-opacity-200);
+  color: var(--clr-opacity-200);
 }
 
+/* Desktop */
 @media (min-width: 50em) {
+  h1 {
+    font-size: var(--fs-800);
+    color: var(--clr-neutral-100);
+  }
 
+  h2 {
+    font-size: var(--fs-600);
+    color: var(--clr-neutral-100);
+  }
+
+  h3 {
+    font-size: var(--fs-700);
+    color: var(--clr-neutral-100);
+  }
+
+  p {
+    font-size: var(--fs-400);
+    color: var(--clr-neutral-200);
+  }
+
+  button {
+    font-size: var(--fs-500);
+    color: var(--clr-neutral-300);
+  }
+
+  button.hero__content--button-1:hover {
+    color: var(--clr-opacity-100);
+  }
+
+  button.hero__content--button-2:hover {
+    color: var(--clr-opacity-200);
+  }
 }
-
-
-
 
 /* - Mobile: 375px
 - Desktop: 1440px */
 
-
-
-
-### Fonts
-
-- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
-- Weights: 400, 600
-
-## Icons
-
-For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
+/* - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
+- [Ionicons](https://ionicons.com) */
