@@ -68,6 +68,17 @@ p {
   margin: 0 auto 3em auto;
 }
 
+/* Desktop */
+@media (min-width: 62em) {
+  :root {
+    --fs-400: 1.125rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.5rem;
+    --fs-700: 2.25rem;
+    --fs-800: 2.875rem;
+  }
+}
+
 /* Header */
 header {
   position: relative;
@@ -137,10 +148,13 @@ button.hero__button-2:hover {
     flex-direction: row;
     margin-bottom: 8em;
     justify-content: center;
+    margin-bottom: 10em;
   }
 
   main .hero__button-1,
-  main .hero__button-2 {
+  main .hero__button-2,
+  section .hero__button-1,
+  section .hero__button-2 {
     margin: 0 0.5em 0 0.5em;
     width: 227px;
   }
@@ -150,27 +164,35 @@ button.hero__button-2:hover {
 section {
   padding: 0 1.5em 0 1.5em;
 }
-.access {
-  margin: 11em 0 4em 0;
-}
 
 section .section__img,
 section .access__img {
-  width: 100%;
+  display: block;
+  max-width: 80%;
   height: auto;
-  margin: 4em 0 3em 0;
+  margin: 4em auto 3em auto;
 }
 
-section.affiliates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 6em;
+/* Desktop - Snippets */
+@media (min-width: 62em) {
+  .grid-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-column-1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .grid-column-2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
 }
 
-section.affiliates img {
-  width: fit-content;
-  margin-bottom: 4em;
+.access {
+  margin: 11em 0 4em 0;
 }
 
 section.supercharge {
@@ -191,6 +213,63 @@ section.supercharge {
   margin-bottom: 3.5em;
 }
 
+/* Desktop - Snippets */
+@media (min-width: 62em) {
+  .grid-stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2em;
+  }
+
+  .grid-stack-box {
+    margin: 0 auto;
+    width: 350px;
+  }
+
+  .box-2 {
+    margin-top: 5px;
+  }
+
+  .box-1 {
+    grid-column-start: 2;
+  }
+
+  .box-2 {
+    grid-column-start: 3;
+  }
+
+  .box-3 {
+    grid-column-start: 4;
+  }
+}
+
+section.affiliates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6em;
+}
+
+section.affiliates img {
+  width: fit-content;
+  margin-bottom: 4em;
+}
+
+/* Desktop - Snippets */
+@media (min-width: 62em) {
+  section.affiliates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto 6em 0;
+  }
+
+  .affiliates img {
+    padding: 0 3em 0 3em;
+  }
+}
+
 section .section-btn {
   text-align: center;
 }
@@ -198,6 +277,12 @@ section .section-btn {
 section .hero__button-1,
 section.hero__button-2 {
   margin: 0 0 1.3em 0;
+}
+
+@media (min-width: 62em) {
+  .appstore {
+    margin-bottom: 8em;
+  }
 }
 
 /* Footer */
