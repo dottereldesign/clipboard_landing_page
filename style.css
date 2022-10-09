@@ -94,6 +94,7 @@ main {
 main .hero__button {
   display: flex;
   flex-direction: column;
+  margin-bottom: 8em;
 }
 
 button {
@@ -130,8 +131,12 @@ button.hero__content-button-2:hover {
 section {
   padding: 0 1.5em 0 1.5em;
 }
+.access {
+  margin: 11em 0 4em 0;
+}
 
-section .section__img {
+section .section__img,
+section .access__img {
   width: 100%;
   height: auto;
   margin: 4em 0 3em 0;
@@ -151,6 +156,20 @@ section.affiliates img {
 
 section.supercharge {
   margin-bottom: 7em;
+}
+
+.supercharge img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+}
+
+.supercharge h3 {
+  padding-bottom: 1em;
+}
+
+.supercharge p {
+  margin-bottom: 3.5em;
 }
 
 section .section-btn {
