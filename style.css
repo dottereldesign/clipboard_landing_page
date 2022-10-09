@@ -78,7 +78,7 @@ header {
 header .header__bg {
   display: block;
   width: 100%;
-  height: auto;
+  max-height: 363px;
 }
 
 header .header__logo {
@@ -105,26 +105,45 @@ button {
   width: 311px;
   margin: 0 auto;
   margin-bottom: 1.5em;
+  font-weight: var(--fw-bold);
 }
 
 button.hero__button-1 {
   background-color: var(--clr-primary-100);
   border-radius: 50px;
   border: none;
+  box-shadow: 0px 3px 1px hsl(171, 66%, 37%);
 }
 
 button.hero__button-2 {
   background-color: var(--clr-primary-200);
   border-radius: 50px;
   border: none;
+  box-shadow: 0px 3px 1px hsl(233, 63%, 58%);
 }
 
-button.hero__content-button-1:hover {
+button.hero__button-1:hover {
   background-color: var(--clr-opacity-100);
 }
 
-button.hero__content-button-2:hover {
-  color: var(--clr-opacity-200);
+button.hero__button-2:hover {
+  background-color: var(--clr-opacity-200);
+}
+
+/* Desktop */
+@media (min-width: 62em) {
+  main .hero__button {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8em;
+    justify-content: center;
+  }
+
+  main .hero__button-1,
+  main .hero__button-2 {
+    margin: 0 0.5em 0 0.5em;
+    width: 227px;
+  }
 }
 
 /* Section */
