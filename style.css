@@ -251,6 +251,8 @@ section.affiliates {
 }
 
 section.affiliates img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 4em;
 }
@@ -291,7 +293,7 @@ footer {
   padding-bottom: 2em;
 }
 
-footer > img {
+footer > a img {
   width: 55px;
   height: auto;
   margin: 0 auto;
@@ -323,10 +325,7 @@ footer ul li {
   color: var(--clr-neutral-100);
 }
 
-/* Desktop */
-@media (min-width: 50em) {
+.stack-ctr a {
+  text-decoration: none;
+  color: black;
 }
-
-/* - [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com) */
